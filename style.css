@@ -1,0 +1,91 @@
+:root {
+    --btn-rows: 4;
+    --btn-cols: 4;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'VT323', monospace;
+}
+
+.calcModel, .brand {
+    text-align: center;
+    color:#FFF;
+}
+
+.calcModel {
+    padding-top: 20px;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.brand {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: small;
+}
+
+.calculator {
+    /* display: block;
+    float:inherit; */
+    border-radius: 5%;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    height: 580px;
+    width:400px;
+} 
+
+.display {
+    text-align: right;
+    /* background-color: #FFF; */
+    padding: 10px 30px 10px 30px;
+    /* padding-top: 10px;
+    padding-bottom:10px; */
+}
+
+.answer {
+    background-color: #FFF;
+    font-size: xx-large;
+    padding: 30px;
+}
+
+.clearDelete {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    text-align: center;
+    height: 70px;
+    grid-column-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+.numOps {
+    display: grid;
+    height: 300px;
+    grid-template-rows: repeat(var(--btn-rows), 1fr);
+    grid-template-columns: repeat(var(--btn-cols), 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+.button-hold {
+    background-color: rgb(128, 126, 126);
+    border: 1px solid black;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+}
